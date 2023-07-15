@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    width: 100%;
+    min-width: 100vh;
+    background-image: url("img2background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+  #btn_search{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    background: rgb(30, 20, 136);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 8px 80px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+   
+  }
+
+  #siteTital{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+
+#btn_search:hover{
+    color: #0d0d0d;
+    background: rgb(12, 247, 223);
+}
+
+#siteTital a{
+  color:white;
+}
+
+#siteTital a:hover{
+  color:black;
+}
+
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-flow: wrap;
+  margin-top: 20px;
+}
+
+.card{
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    transition: 0.3s;
+    
+}
+
+.card-header{
+  text-align: left;
+  padding: 20px 10px;
+  background: linear-gradient(to right, #9e7ad0, #6012cd);
+  color: #fff;
+}
+
+.card-body{
+  text-align: left;
+  height: 120px;
+  padding: 20px 20px;
+  text-align: left;
+  font-size: 18px;
+}
+
+ .btn{
+  text-align: right;
+  font-size: 30px;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+  border-radius: none;
+}
+
+.btn:hover{
+  color:red;
+}
+
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0,0,0,0.25);
+}
+
+
+/*responsive media queries*/
+@media  screen and (max-width: 1000px) {
+  .card{
+    width: 40%;
+  }
+  
+}
+
+@media  screen and (max-width: 620px) {
+  .container{
+    width: 100%;
+  }
+
+  .heading{
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card{
+    width: 80%;
+  }
+  
+}
